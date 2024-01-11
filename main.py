@@ -17,7 +17,7 @@ class Clicker:
      x,y = pyautogui.center(collectButton)
      pyautogui.click(x=x, y=y)
     except:
-     print("aoda1")
+     pyautogui.moveTo(x=100,y=100)
 
   def create_click(self):
     try:
@@ -25,7 +25,7 @@ class Clicker:
      x,y = pyautogui.center(createButton)
      pyautogui.click(x=x, y=y)
     except:
-     print("aoda2")
+     pyautogui.moveTo(x=100,y=100)
 
 
 if __name__ == "__main__":
