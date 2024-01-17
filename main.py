@@ -16,7 +16,7 @@ class Clicker:
      collectButton = pyautogui.locateOnScreen(self.img2,confidence=0.7)
      x,y = pyautogui.center(collectButton)
      sleep(0.1)
-     pyautogui.click(x=x, y=y)
+     pyautogui.click(x=x, y=y, clicks=2 , interval= 0.1)
     except:
      if(pyautogui.position == (100,100)):
       pass
@@ -30,7 +30,7 @@ class Clicker:
      createButton = pyautogui.locateOnScreen(self.img1,confidence=0.7)
      x,y = pyautogui.center(createButton)
      sleep(0.1)
-     pyautogui.click(x=x, y=y)
+     pyautogui.click(x=x, y=y, clicks=2 , interval= 0.1)
     except:
      if(pyautogui.position() == (100,100)):
       pass
